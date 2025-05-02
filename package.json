@@ -1,22 +1,22 @@
 {
-  "name": "11ty-landing-page",
-  "version": "0.0.1",
-  "description": "A simple landing page built with 11ty and Tailwind CSS",
+  "name": "hella-simple-eleventy-tailwind-starter",
+  "description": "Hella Simple Eleventy + Tailwind Starter",
   "scripts": {
-    "serve": "ELEVENTY_ENV=dev eleventy --serve",
-    "deploy": "eleventy",
-    "deploy-pgs": "ELEVENTY_ENV=pages eleventy"
+    "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet & npx @tailwindcss/cli -i ./src/styles.css -o ./_site/styles.css --watch",
+    "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy && npx @tailwindcss/cli -i ./src/styles.css -o ./_site/styles.css --minify"
   },
-  "author": "ttntm",
+  "keywords": [
+    "eleventy",
+    "tailwindcss",
+    "starter"
+  ],
+  "author": "Marcel Appelman",
   "license": "MIT",
   "type": "module",
+  "browserslist": "defaults, not ie <= 11",
   "devDependencies": {
-    "@11ty/eleventy": "3.0",
-    "autoprefixer": "^10.2.5",
-    "cssnano": "^4.1.10",
-    "html-minifier": "^4.0.0",
-    "postcss": "^8.2.9",
-    "postcss-import": "^14.0.0",
-    "tailwindcss": "^2.0.4"
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/cli": "^4.1.5",
+    "tailwindcss": "^4.1.5"
   }
 }
