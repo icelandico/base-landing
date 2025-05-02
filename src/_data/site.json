@@ -1,0 +1,16 @@
+{
+  "author": "AWE.SOME",
+  "description": "AWE.SOMEty - A Landing Page Template for 11ty",
+  "title": "AWE.SOMEty - A Landing Page Template for 11ty",
+  "language": "en",
+  "social": [
+    {
+      "title": "Mastodon",
+      "url": "https://mastodon.social/#"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://linkedin.com/company/#"
+    }
+  ]
+}
