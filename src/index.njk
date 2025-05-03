@@ -1,7 +1,12 @@
 ---
 layout: default
-title: "Hella Simple Eleventy + Tailwind CSS Starter"
+title: "Simple websites"
 ---
-<div class="">
-  
-</div>
+<main class="bg-primary-green border-4">
+  <section>
+    {% include "partials/section-services.njk" %}
+  </section>
+  <section>
+    {% include "partials/section-portfolio.njk" %}
+  </section>
+</main>

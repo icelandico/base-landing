@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+html {
+  @apply text-white;
+}
+
+@theme {
+  --color-primary-green: #1B3B2F;
+  --color-secondary-green: #2D5B48;
+  --color-accent: #B8D8BA;
+  --color-light-grey: #E0E0E0;
+  --color-primary-yellow: #F2C94C;
+}

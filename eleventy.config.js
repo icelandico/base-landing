@@ -1,11 +1,26 @@
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+
 export default function (eleventyConfig) {
-  eleventyConfig.setServerOptions({
-    watch: ['_site/**/*.css'],
-  });
+  eleventyConfig.addPassthroughCopy('/src/assets');
+  eleventyConfig.addPassthroughCopy("/admin");
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  // eleventyConfig.setServerOptions({
+  //   watch: ['public/**/*.css'],
+  // });
+
+  eleventyConfig.addNunjucksAsyncShortcode("svgIcon", async filename => {
+    const metadata = await Image(`./src/assets/icons/${filename}`, {
+      formats: ["svg"],
+      dryRun: true,
+    })
+    return metadata.svg[0].buffer.toString()
+  })
 
   return {
     dir: {
       input: 'src',
+      output: 'public'
     },
   };
 };
