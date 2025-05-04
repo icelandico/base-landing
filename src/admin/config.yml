@@ -1,8 +1,9 @@
 backend:
   name: git-gateway
+  repo: icelandico/base-landing
   branch: main
-media_folder: "static/assets/images"
-public_folder: "/assets/images"
+media_folder: "src/static/assets"
+public_folder: "/static/assets"
 collections:
   - name: "portfolio"
     label: "Portfolio"
@@ -16,3 +17,4 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured image", name: "image", widget: "image"}
+      - {label: "ImgAlt", name: "imgAlt", widget: "text"}

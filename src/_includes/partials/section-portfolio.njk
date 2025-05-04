@@ -3,9 +3,10 @@
   <div class="border">
     {%- for item in collections.portfolio %}
     <div class="bg-secondary-green h-[125px]">
-      {# <img src="{{ item.data.image }}" class="rounded-md"> #}
+      <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="rounded-md">
       <p class="two-thirds">{{ item.data.title }}</p>
-      {# <span>{{ item.data.description }}</span> #}
+      <span>{{ item.data.description }}</span>
+      <p>{{ content | safe }}</p>
     </div>
     {%- endfor -%}
   </div>
