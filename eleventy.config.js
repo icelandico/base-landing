@@ -2,12 +2,9 @@ import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('/src/assets');
-  eleventyConfig.addPassthroughCopy("/admin");
+  eleventyConfig.addPassthroughCopy("src/admin");
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
-  // eleventyConfig.setServerOptions({
-  //   watch: ['public/**/*.css'],
-  // });
 
   eleventyConfig.addNunjucksAsyncShortcode("svgIcon", async filename => {
     const metadata = await Image(`./src/assets/icons/${filename}`, {
