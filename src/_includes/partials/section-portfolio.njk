@@ -1,9 +1,9 @@
 <div class="border-2 h-[750px]" id="portfolio">
   SERVICES PORTFOLIO
-  <div class="border">
+  <div class="flex gap-4 h-full">
     {%- for item in collections.portfolio %}
-    <div class="bg-secondary-green h-[125px]">
-      <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="rounded-md">
+    <div class="bg-secondary-green basis-1/3 max-h-[250px]">
+      <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="w-full rounded-md h-28 object-fit">
       <p class="two-thirds">{{ item.data.title }}</p>
       <span>{{ item.data.description }}</span>
       <p>{{ content | safe }}</p>
