@@ -1,5 +1,5 @@
 ---
-layout: portfolio-item
+type: portfolio
 title: Mesa studio
 date: 2025-05-04
 description: Website for interior design studio.

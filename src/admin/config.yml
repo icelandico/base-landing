@@ -6,11 +6,11 @@ public_folder: "/assets/images"
 collections:
   - name: "portfolio"
     label: "Portfolio"
-    folder: "portfolio"
+    folder: "src/content/portfolio"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "portfolio-item"}
+      - {label: "Type", name: "type", widget: "hidden", default: "portfolio"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD"}
       - {label: "Body", name: "body", widget: "markdown"}

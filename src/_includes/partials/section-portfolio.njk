@@ -1,3 +1,12 @@
 <div class="border-2 h-[750px]" id="portfolio">
   SERVICES PORTFOLIO
+  <div class="border">
+    {%- for item in collections.portfolio %}
+    <div class="bg-secondary-green h-[125px]">
+      <img src="{{ item.data.image }}" class="rounded-md">
+      <p class="two-thirds">{{ item.data.title }}</p>
+      <span>{{ item.data.description }}</span>
+    </div>
+    {%- endfor -%}
+  </div>
 </div>
