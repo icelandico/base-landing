@@ -1,0 +1,8 @@
+{
+  "contact": "kontakt",
+  "portfolio": "portfolio",
+  "offer": "usługi",
+  "form": {
+    "name": "Imię"
+  }
+}

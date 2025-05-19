@@ -7,11 +7,12 @@
     <meta name="generator" content="{{ eleventy.generator }}">
     <title>{% if title %}{{ title }}{% else %}Websites for small business{% endif %}</title>
     <link rel="stylesheet" href="/assets/styles.css"/>
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body class="flex flex-col bg-primary-green mx-8 min-h-screen">
+  <body class="flex flex-col min-h-screen">
     {% include "navigation.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}

@@ -1,0 +1,64 @@
+<div class="bg-primary-brown py-4 px-8">
+  <h2 class="text-center">{{ site.contact }}</h2>
+  <div class="flex gap-16 w-full h-[500px] mt-16">
+    <div class="w-1/2">
+      <div>
+        <form>
+          <div class="flex flex-col mb-4">
+            <input class="border border-4 border-dark-primary placeholder-dark-primary focus:outline-none rounded pl-4 h-[50px]" type="text" id="name" name="name" placeholder="imię" required>
+          </div>
+          <div class="flex flex-col mb-4">
+            <input class="border border-4 border-dark-primary placeholder-dark-primary focus:outline-none rounded pl-4 h-[50px]" type="email" id="email" name="email" placeholder="email" required>
+          </div>
+          <div class="flex flex-col mb-4">
+            <textarea
+              placeholder="wiadomość"
+              class="border border-4 border-dark-primary placeholder-dark-primary focus:outline-none rounded pl-4 py-4"
+              id="message"
+              name="message"
+              rows="10"
+              cols="10"
+              required></textarea>
+          </div>
+          <button type="submit" class="p-2 px-8 border-dark-primary border-4 cursor-pointer rounded">Wyślij</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="w-1/2">
+      <p class="mb-8">Wyślij nam e-mail i powiedz nam, czego oczekujesz od nowej witryny. Odpowiadamy wszystkim w ciągu 24 godzin od skontaktowania się z nami. Możesz też do nas zadzwonić i natychmiast porozmawiać. Jeśli nie będziemy dostępni, oddzwonimy tego samego dnia.</p>
+      <div class="flex flex-col gap-8">
+
+        <div class="flex items-center">
+          <div class="flex items-center justify-center bg-dark-primary rounded-full w-[55px] h-[55px] text-primary-brown">
+            {% svgIcon 'phone.svg' %}
+          </div>
+          <div class="flex flex-col gap-2 ml-8">
+            <p class="font-bold">numer telefonu</p>
+            <a href="phone:603556132">603 556 132</a>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex items-center justify-center bg-dark-primary rounded-full w-[55px] h-[55px] text-primary-brown">
+            {% svgIcon 'map.svg' %}
+          </div>
+          <div class="flex flex-col gap-2 ml-8">
+            <p class="font-bold">lokalizacja</p>
+            <p>Gdynia</p>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <div class="flex items-center justify-center bg-dark-primary rounded-full w-[55px] h-[55px] text-primary-brown">
+            {% svgIcon 'mail.svg' %}
+          </div>
+          <div class="flex flex-col gap-2 ml-8">
+            <p class="font-bold">email</p>
+            <a href="mailto:hi@geodev.me">hi@geodev.me</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

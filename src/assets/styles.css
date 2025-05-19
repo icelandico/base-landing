@@ -1,21 +1,51 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
+  font-family: Nunito, sans-serif;
 }
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+  :root { font-family: Nunito, sans-serif; }
 }
 
 html {
-  @apply text-white;
+  @apply text-dark-primary;
 }
 
 @theme {
-  --color-primary-green: #1B3B2F;
-  --color-secondary-green: #2D5B48;
+  --color-primary-green: #183B25;
+  --color-secondary-green: #7aa4a0;
   --color-accent: #B8D8BA;
   --color-light-grey: #E0E0E0;
   --color-primary-yellow: #F2C94C;
+  --color-white-light: #e5e7eb;
+  --color-dark-primary: #0B1215;
+  --color-primary-brown: #D7C9C9;
+}
+
+@layer components {
+  h1 {
+    @apply text-4xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h4 {
+    @apply text-xl;
+    @apply font-semibold;
+  }
+  h5 {
+    @apply text-lg;
+    @apply font-semibold;
+  }
+  h6 {
+    @apply text-sm;
+    @apply font-semibold;
+  }
 }
