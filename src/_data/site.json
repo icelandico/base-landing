@@ -3,6 +3,7 @@
   "portfolio": "portfolio",
   "offer": "usługi",
   "form": {
-    "name": "Imię"
+    "name": "Imię",
+    "send": "Wyślij"
   }
 }

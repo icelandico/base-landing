@@ -1,10 +1,10 @@
-<div class="border h-[750px]" id="portfolio">
-  <h2 class="text-center">Portfolio</h2>
-  <div class="flex gap-4 h-full">
+<div class="py-4 px-8" id="portfolio">
+  <h2 class="text-center">{{ site.portfolio }}</h2>
+  <div class="flex flex-col md:flex-row gap-16 h-full mt-16">
     {%- for item in collections.portfolio %}
-    <div class="bg-secondary-green basis-1/3 max-h-[250px]">
-      <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="w-full rounded-md h-28 object-fit">
-      <p class="two-thirds">{{ item.data.title }}</p>
+    <div class="bg-dark-primary basis-1/5 h-[350px] p-4 text-white rounded-md cursor-pointer">
+      <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="w-full rounded-md h-28 object-cover">
+      <p class="two-thirds my-4 font-bold text-xl">{{ item.data.title }}</p>
       <span>{{ item.data.description }}</span>
       <p>{{ content | safe }}</p>
     </div>
