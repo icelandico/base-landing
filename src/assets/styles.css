@@ -13,10 +13,8 @@ html {
 }
 
 @theme {
-  --color-primary-green: #183B25;
   --color-secondary-green: #7aa4a0;
   --color-accent: #B8D8BA;
-  --color-light-grey: #E0E0E0;
   --color-primary-yellow: #F2C94C;
   --color-white-light: #e5e7eb;
   --color-dark-primary: #0B1215;
