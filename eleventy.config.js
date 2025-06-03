@@ -3,6 +3,9 @@ import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('/src/assets');
   eleventyConfig.addPassthroughCopy('./src/admin');
+  eleventyConfig.addPassthroughCopy({ "src/assets/js": "assets/js" });
+
+  eleventyConfig.addWatchTarget("src/assets/js");
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 

@@ -1,11 +1,13 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
   font-family: Nunito, sans-serif;
 }
 @supports (font-variation-settings: normal) {
-  :root { font-family: Nunito, sans-serif; }
+  :root {
+    font-family: Nunito, sans-serif;
+  }
 }
 
 html {
@@ -14,11 +16,11 @@ html {
 
 @theme {
   --color-secondary-green: #7aa4a0;
-  --color-accent: #B8D8BA;
-  --color-primary-yellow: #F2C94C;
+  --color-accent: #b8d8ba;
+  --color-primary-yellow: #f2c94c;
   --color-white-light: #e5e7eb;
-  --color-dark-primary: #0B1215;
-  --color-primary-green: #779E82;
+  --color-dark-primary: #0b1215;
+  --color-primary-green: #779e82;
 }
 
 @layer components {
@@ -45,5 +47,58 @@ html {
   h6 {
     @apply text-sm;
     @apply font-semibold;
+  }
+}
+
+.typewriter-container {
+  color: var(--color-dark-primary);
+  font-family: "Courier New", monospace;
+  padding: 0 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  white-space: pre;
+  overflow: hidden;
+  font-size: 0.7rem;
+
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#typewriter::after {
+  content: "|";
+  animation: blink 500ms linear infinite alternate;
+}
+
+@media (min-width: 1024px) {
+  .typewriter-container {
+    font-size: 0.8rem;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
