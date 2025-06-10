@@ -1,40 +1,22 @@
-// const lines = [
-//   "<!DOCTYPE html>",
-//   "<html>",
-//   "<head>",
-//   "  <title>My Portfolio</title>",
-//   "</head>",
-//   "<body>",
-//   "  <h1>Welcome to my site</h1>",
-//   "  <p>This is a simple HTML page.</p>",
-//   "",
-//   "  <script>",
-//   "    document.addEventListener('DOMContentLoaded', () => {",
-//   "      console.log('Page loaded!');",
-//   "    });",
-//   "  </script>",
-//   "</body>",
-//   "</html>",
-// ];
-
+const header = document.querySelector(".navbar");
 const lines = [
-  "<!DOCTYPE html>",
-  '<html lang="en">',
+  '<html lang="pl">',
   "<head>",
-  '  <meta charset="UTF-8">',
-  '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
-  "  <title>Contact Form</title>",
+  "  <title>Twój tytuł</title>",
   "</head>",
   "<body>",
-  '  <form action="/submit" method="POST">',
-  '    <label for="name">Name:</label>',
-  '    <input type="text" id="name" name="name" required />',
-  "",
-  '    <label for="email">Email:</label>',
-  '    <input type="email" id="email" name="email" required />',
-  "",
-  '    <button type="submit">Send</button>',
-  "  </form>",
+  "  <header>",
+  "    <nav>",
+  '      <a href="#portfolio">Usługi</a>',
+  '      <a href="#contact">Kontakt</a>',
+  "    </nav>",
+  "  </header>",
+  "  <main>",
+  "    <section>",
+  "      <h2>Twoja firma</h2>",
+  "      <p>Showcase your work & connect with clients.</p>",
+  "    </section>",
+  "  </main>",
   "</body>",
   "</html>",
 ];
@@ -59,3 +41,12 @@ function type() {
 }
 
 type();
+
+document.addEventListener("scroll", (e) => {
+  const topValue = document.body.getBoundingClientRect().top;
+  if (topValue < -75) {
+    header.classList.add("navbar-fixed");
+  } else {
+    header.classList.remove("navbar-fixed");
+  }
+});
