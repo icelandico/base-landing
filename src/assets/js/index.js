@@ -68,7 +68,7 @@ const handleSubmit = (event) => {
       const name = document.getElementById("name");
       const email = document.getElementById("email");
       const message = document.getElementById("message");
-      const successMessage = document.getElementById("form-submit-success");
+      const successMessage = document.querySelector(".form-submit-success");
 
       successMessage.classList.add("visible");
       name.value = "";

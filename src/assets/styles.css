@@ -144,7 +144,7 @@ html {
   }
 }
 
-#form-submit-success {
+.form-submit-success {
   display: none;
 }
 
