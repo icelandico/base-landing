@@ -24,4 +24,4 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured image", name: "image", widget: "image" }
       - { label: "ImgAlt", name: "imgAlt", widget: "text" }
-      - { label: "Url", name: "url", widget: "text" }
+      - { label: "Url", name: "url", widget: "string" }
