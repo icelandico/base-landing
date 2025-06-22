@@ -2,7 +2,7 @@
 type: portfolio
 title: Mesa studio
 date: 2025-05-04
-description: Website for interior design studio.
+description: Mesa Studio to mała pracownia architektury wnętrz z Gdyni.
 image: /assets/imgs/mesa_1.png
 imgAlt: website thumbnail
 url: https://mesa-studio.pl/
