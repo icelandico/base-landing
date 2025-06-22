@@ -1,8 +1,9 @@
 ---
 type: portfolio
-title: windsurfing GMBh
+title: Salon fryzjerski
 date: 2025-05-04
-description: Website for windsurfing company in Australia
+description: Jest to przykładowa strona dla nieistniejącego salonu
+  fryzjerskiego. Przykład jak może wyglądać Twoja strona.
 image: /assets/imgs/windsurfing_1.jpeg
 imgAlt: website thumbnail
 url: www.google.com
