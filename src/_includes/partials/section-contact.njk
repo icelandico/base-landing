@@ -3,7 +3,7 @@
   <div class="flex flex-col md:flex-row gap-16 md:gap-32 w-full mt-8 md:mt-16">
     <div class="w-full md:w-1/2">
       <div>
-        <form class="w-full md:w-4/5" name="contact" netlify>
+        <form class="w-full md:w-4/5" name="contact" netlify id="contact-form">
           <div class="flex flex-col mb-4">
             <input
               class="border border-4 border-dark-primary placeholder-dark-primary focus:outline-none focus:border-white transition-border duration-300 rounded pl-4 h-[50px]"
@@ -13,7 +13,7 @@
               placeholder="imię"
               required
               oninvalid="this.setCustomValidity('To pole nie może być puste')"
-              
+              onchange="this.setCustomValidity('')"
             >
           </div>
           <div class="flex flex-col mb-4">
@@ -25,6 +25,7 @@
               placeholder="email"
               required
               oninvalid="this.setCustomValidity('To pole nie może być puste')"
+              onchange="this.setCustomValidity('')"
             >
           </div>
           <div class="flex flex-col mb-4">
@@ -37,6 +38,7 @@
               cols="10"
               required
               oninvalid="this.setCustomValidity('To pole nie może być puste')"
+              onchange="this.setCustomValidity('')"
               ></textarea>
           </div>
           <button type="submit" class="p-2 font-bold px-8 border-dark-primary border-4 cursor-pointer rounded hover:bg-dark-primary hover:text-primary-green transition duration-300">{{ site.form.send }}</button>
