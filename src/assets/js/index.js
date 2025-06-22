@@ -62,7 +62,17 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() => {
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+      const successMessage = document.getElementById("form-success-message");
+
+      successMessage.classList.add("visible");
+      name.value = "";
+      email.value = "";
+      message.value = "";
+    })
     .catch((error) => alert(error));
 };
 

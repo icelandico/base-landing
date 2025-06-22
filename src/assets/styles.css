@@ -143,3 +143,11 @@ html {
     border-radius: 8px;
   }
 }
+
+#form-submit-success {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
