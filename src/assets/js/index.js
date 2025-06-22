@@ -32,7 +32,9 @@ function type() {
       charIndex++;
       setTimeout(type, 40);
     } else {
-      el.textContent += "\n";
+      if (lineIndex < lines.length - 1) {
+        el.textContent += "\n";
+      }
       lineIndex++;
       charIndex = 0;
       setTimeout(type, 400);
@@ -66,7 +68,7 @@ const handleSubmit = (event) => {
       const name = document.getElementById("name");
       const email = document.getElementById("email");
       const message = document.getElementById("message");
-      const successMessage = document.getElementById("form-success-message");
+      const successMessage = document.getElementById("form-submit-success");
 
       successMessage.classList.add("visible");
       name.value = "";
