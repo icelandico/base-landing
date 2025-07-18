@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html class="overflow-y-scroll" lang="en">
+<html class="overflow-y-scroll" lang="pl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-    <meta name="description" content="{% if description %}{{ description }}{% else %}Your site description{% endif %}"/>
+    <meta name="description" content="{{ description }}"/>
+    <meta name="keywords" content="strony internetowe, strony www, strony dla firm, strony dla małych firm, tworzenie stron, strony wizytówki, strony internetowe lokalne, tani web design, LeafCode">
     <meta name="generator" content="{{ eleventy.generator }}">
+    <meta property="og:title" content="Strony internetowe dla małych firm – LeafCode" />
+    <meta property="og:description" content="Nowoczesne, szybkie strony WWW dla lokalnych firm. Fryzjerzy, prawnicy, stolarze, transport – Twoja firma w internecie." />
+    <meta property="og:url" content="https://www.leafcode.me" />
+    <meta property="og:type" content="website" />
     <title>{% if title %}{{ title }}{% else %}Websites for small business{% endif %}</title>
+    <link rel="canonical" href="https://www.leafcode.me" />
     <link rel="stylesheet" href="/assets/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "LeafCode",
+        "url": "https://www.leafcode.me",
+        "description": "Tworzę nowoczesne i proste strony internetowe dla lokalnych firm w Polsce.",
+        "email": "hi@geodev.me",
+        "telephone": "+48603556132",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PL"
+        },
+        "areaServed": "PL",
+        "keywords": "strony internetowe, strony www dla firm, tworzenie stron, LeafCode"
+      }
+      </script>
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body class="flex flex-col min-h-screen">
