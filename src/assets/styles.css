@@ -151,3 +151,9 @@ html {
 .visible {
   display: block;
 }
+
+ul.offer-list li:before {
+  content: "✓";
+  color: white;
+  margin-right: 0.5rem;
+}
