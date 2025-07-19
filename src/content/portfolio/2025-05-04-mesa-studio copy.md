@@ -2,7 +2,7 @@
 type: portfolio
 title: Mesa studio
 date: 2025-05-04
-description: Mesa Studio to mała pracownia architektury wnętrz z Gdyni.
+description: Mesa Studio to pracownia architektury wnętrz z Gdyni.
 image: /assets/imgs/mesa_1.png
 imgAlt: website thumbnail
 url: https://mesa-studio.pl/
