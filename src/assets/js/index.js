@@ -14,7 +14,7 @@ const lines = [
   "  <main>",
   "    <section>",
   "      <h2>Bądź widoczny w internecie</h2>",
-  "      <p>Tworzę proste, szybkie i przejrzyste strony internetowe dla lokalnych firm – bez kreatorów i zbędnych dodatków.</p>",
+  "      <p>Tworzę proste, szybkie i przejrzyste strony internetowe – bez kreatorów i zbędnych dodatków.</p>",
   "    </section>",
   "  </main>",
   "</body>",
