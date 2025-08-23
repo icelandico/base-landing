@@ -3,8 +3,8 @@
   <div class="grid [grid-template-columns:repeat(auto-fit,_minmax(0,_300px))] gap-4 justify-start h-full mt-16">
     {%- for item in collections.portfolio %}
     <div>
-      <a href="{{item.data.url}}" target="_blank" class="block bg-transparent max-h-[350px] p-4 md:p-8 text-white rounded-md cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-black/20">
-        <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="w-full rounded-md grayscale h-32 object-cover">
+      <a href="{{item.data.url}}" target="_blank" class="block bg-transparent max-h-[350px] p-4 md:p-8 text-white rounded-md cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-black/20 group">
+        <img alt="{{ item.data.imgAlt }}" src="{{ item.data.image }}" class="w-full rounded-md grayscale h-32 object-cover group-hover:grayscale-0">
         <p class="two-thirds my-4 font-bold text-xl">{{ item.data.title }}</p>
         <span>{{ item.data.description }}</span>
       </a>
