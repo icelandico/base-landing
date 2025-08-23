@@ -2,7 +2,7 @@
 type: portfolio
 title: Salon fryzjerski
 date: 2025-05-04
-description: Jest to przykładowa strona dla nieistniejącego salonu fryzjerskiego.
+description: Przykładowa strona dla salonu  fryzjerskiego.
 image: assets/imgs/hairdresser_1.png
 imgAlt: website thumbnail
 url: https://melodious-bunny-f13577.netlify.app/
