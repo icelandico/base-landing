@@ -59,23 +59,30 @@ const handleSubmit = (event) => {
   const myForm = event.target;
   const formData = new FormData(myForm);
 
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-      const message = document.getElementById("message");
-      const successMessage = document.querySelector(".form-submit-success");
+  const action = myForm.action;
 
-      successMessage.classList.add("visible");
-      name.value = "";
-      email.value = "";
-      message.value = "";
+  fetch(action, {
+    method: "POST",
+    headers: { Accept: "application/json" },
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        const successMessage = document.querySelector(".form-submit-success");
+        successMessage.classList.add("visible");
+
+        myForm.reset();
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            alert(data["errors"].map((error) => error["message"]).join(", "));
+          } else {
+            alert("Wystąpił problem z wysłaniem formularza.");
+          }
+        });
+      }
     })
-    .catch((error) => alert(error));
+    .catch((error) => alert("Błąd połączenia: " + error));
 };
 
 document
