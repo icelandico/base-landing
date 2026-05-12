@@ -1,7 +1,10 @@
 name = 'leafcode-home'
 compatibility_date = "2026-01-08"
 
+[build]
+command = "npm run build"
+
 [assets]
-directory = "./build"
+directory = "./public"
 not_found_handling = "single-page-application"
 html_handling = "auto-trailing-slash"
